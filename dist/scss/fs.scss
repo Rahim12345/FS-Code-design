@@ -1,0 +1,95 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 15px 15px;
+    font-family: 'Euclid Circular Regular';
+    font-size: 14px;
+    line-height: 24px;
+    
+    &:focus {
+        outline: none;
+    }
+
+    &.is {
+        &-rounded {
+            border-radius: 24px;
+        }
+
+        &-success {
+            background-color: $color-sucess;
+            border-color: $color-sucess;
+            color: $text-white;
+        }
+
+        &-danger {
+            background-color: $color-danger;
+            border-color: $color-danger;
+        }
+    }
+}
+
+.form {
+    &-group {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #CCD1D5;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Euclid Circular Regular';
+    color: #3d4045;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+.container {
+    padding-left: 112px;
+    padding-right: 112px;
+
+    &.is-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@include col-generator( '' );
+
+@media (min-width: 768px) {
+    @include col-generator( '-sm' );
+}
+
+@media (min-width: 992px) {
+    @include col-generator( '-md' );
+}
+
+@media (min-width: 1200px) {
+    @include col-generator( '-lg' );
+}

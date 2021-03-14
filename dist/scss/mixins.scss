@@ -1,0 +1,7 @@
+@mixin col-generator ( $prefix ) {
+    @for $i from 1 through 12 {
+        .col#{$prefix}-#{$i} {
+            flex-basis: 100% / 12 * $i;
+        }
+    }
+}
