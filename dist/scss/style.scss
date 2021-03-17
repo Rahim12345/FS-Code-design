@@ -48,7 +48,7 @@ a {
         line-height:36px;
         text-align: center;
         max-width: 70%;
-        margin: 96px auto 63px;
+        margin: 48px auto 44px;
         font-family: $font-regular;
     }
 }
@@ -584,39 +584,45 @@ a {
 }
 .mission{
     background-color:  #343434;
-    padding-top:68px;
-    padding-bottom:92px;
-    
-    
+
     &-heading{
         color: #FFFFFF;
         font-family: $font-medium;
         font-size:20px;
+        margin-top: 40px;
     }
     &-paragraph{
         color: #FFFFFF;
         font-size: 16px;
         font-family: $font-regular;
+        margin-top: 24px;
     }
     &-ourmissioncontainer
     {
         max-width: 384px;
         margin: 0 auto;
+        margin-top:68px;
+        margin-bottom:68px;
       
     }
     &-ourvisioncontainer
     {
         max-width: 384px;
-        margin: 0 auto;      
+        margin: 0 auto;
+        margin-top:68px;
+        margin-bottom:92px;   
     }
 
 }
 .ourvalue{
+
     &-centered{
         justify-content: center;
     }
+
     &-values{
-        list-style-type:none;
+        margin-top:92px;
+        margin-bottom:88px;
 
         &-heading
         { 
@@ -633,13 +639,16 @@ a {
             background: #FAF4E7;
             border-radius: 16px;
             margin-bottom: 24px;
-            max-width: 800px;
             display: flex;
-            flex-direction: row;
             align-items: center;
-            
-            
+            height:88px;
 
+            svg{
+                margin-top: 32px;
+                margin-bottom:32px;
+                margin-left:24px;
+                margin-right:24px;
+            }
             &-text{
                 font-family: $font-regular;
                 font-style: normal;
@@ -647,35 +656,8 @@ a {
                 font-size: 20px;
                 line-height: 32px;
                 color: #343434;
-                margin-right:106px;
+                margin-right: 106px;
             }
         }
-
-        li:before {
-            padding-left:24px;
-            padding-right: 24px;
-            font-size: 75px;
-            content: "\2022";
-            vertical-align: middle;
-
-
-        }
-        li:nth-child(2):before {
-            color: #43BA7F;
-          }
-          
-        li:nth-child(3):before {
-            color:#FCC231;
-          }
-          
-        li:nth-child(4):before {
-            color: #FF8145;;
-          }
-        li:nth-child(5):before {
-            color: #C282D1;;
-          }
-        li:nth-child(6):before {
-            color: #3878F2;
-          }
     }
 }
