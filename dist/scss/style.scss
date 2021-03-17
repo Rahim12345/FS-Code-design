@@ -37,10 +37,11 @@ a {
     }
     &-Title {
         font-size: 34px;
-        line-height: 44px;
+        line-height: 43px;
         text-align: center;
         color: #000000;
-        ;
+        font-family: $font-medium;
+        margin-top: 48px;
 
     }
     &-paragraph {
@@ -590,12 +591,16 @@ a {
         font-family: $font-medium;
         font-size:20px;
         margin-top: 40px;
+        line-height: 25px;
+        font-weight: normal;
+        font-style: normal;
     }
     &-paragraph{
         color: #FFFFFF;
         font-size: 16px;
         font-family: $font-regular;
         margin-top: 24px;
+        line-height: 24px;
     }
     &-ourmissioncontainer
     {
@@ -640,16 +645,19 @@ a {
             border-radius: 16px;
             margin-bottom: 24px;
             display: flex;
-            align-items: center;
-            height:88px;
+            min-height:88px;
 
             svg{
                 margin-top: 32px;
                 margin-bottom:32px;
                 margin-left:24px;
                 margin-right:24px;
+                flex-shrink: 0;
+                
             }
             &-text{
+                margin-top:28px;
+                margin-bottom:28px;
                 font-family: $font-regular;
                 font-style: normal;
                 font-weight: normal;
@@ -658,6 +666,9 @@ a {
                 color: #343434;
                 margin-right: 106px;
             }
+        }
+        &-value:last-child{
+            margin-bottom: 0px;
         }
     }
 }

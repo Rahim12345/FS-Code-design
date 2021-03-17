@@ -335,9 +335,11 @@ a {
 
 .header-Title {
   font-size: 34px;
-  line-height: 44px;
+  line-height: 43px;
   text-align: center;
   color: #000000;
+  font-family: "Euclid Circular Medium";
+  margin-top: 48px;
 }
 
 .header-paragraph {
@@ -931,6 +933,9 @@ a {
   font-family: "Euclid Circular Medium";
   font-size: 20px;
   margin-top: 40px;
+  line-height: 25px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .mission-paragraph {
@@ -938,6 +943,7 @@ a {
   font-size: 16px;
   font-family: "Euclid Circular Regular";
   margin-top: 24px;
+  line-height: 24px;
 }
 
 .mission-ourmissioncontainer {
@@ -983,10 +989,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 88px;
+  min-height: 88px;
 }
 
 .ourvalue-values-value svg {
@@ -994,9 +997,13 @@ a {
   margin-bottom: 32px;
   margin-left: 24px;
   margin-right: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .ourvalue-values-value-text {
+  margin-top: 28px;
+  margin-bottom: 28px;
   font-family: "Euclid Circular Regular";
   font-style: normal;
   font-weight: normal;
@@ -1004,4 +1011,8 @@ a {
   line-height: 32px;
   color: #343434;
   margin-right: 106px;
+}
+
+.ourvalue-values-value:last-child {
+  margin-bottom: 0px;
 }
