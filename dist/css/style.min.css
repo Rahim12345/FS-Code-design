@@ -333,6 +333,22 @@ a {
   width: 100%;
 }
 
+.header-Title {
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+.header-paragraph {
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  max-width: 70%;
+  margin: 96px auto 63px;
+  font-family: "Euclid Circular Regular";
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,4 +920,108 @@ a {
 
 .footer-subscribe-email > svg {
   margin-right: 16px;
+}
+
+.mission {
+  background-color: #343434;
+  padding-top: 68px;
+  padding-bottom: 92px;
+}
+
+.mission-heading {
+  color: #FFFFFF;
+  font-family: "Euclid Circular Medium";
+  font-size: 20px;
+}
+
+.mission-paragraph {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Euclid Circular Regular";
+}
+
+.mission-ourmissioncontainer {
+  max-width: 384px;
+  margin: 0 auto;
+}
+
+.mission-ourvisioncontainer {
+  max-width: 384px;
+  margin: 0 auto;
+}
+
+.ourvalue-centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourvalue-values {
+  list-style-type: none;
+}
+
+.ourvalue-values-heading {
+  font-family: "Euclid Circular Medium";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #343434;
+  margin-bottom: 48px;
+  margin-left: 24px;
+}
+
+.ourvalue-values-value {
+  background: #FAF4E7;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourvalue-values-value-text {
+  font-family: "Euclid Circular Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #343434;
+  margin-right: 106px;
+}
+
+.ourvalue-values li:before {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 75px;
+  content: "\2022";
+  vertical-align: middle;
+}
+
+.ourvalue-values li:nth-child(2):before {
+  color: #43BA7F;
+}
+
+.ourvalue-values li:nth-child(3):before {
+  color: #FCC231;
+}
+
+.ourvalue-values li:nth-child(4):before {
+  color: #FF8145;
+}
+
+.ourvalue-values li:nth-child(5):before {
+  color: #C282D1;
+}
+
+.ourvalue-values li:nth-child(6):before {
+  color: #3878F2;
 }
