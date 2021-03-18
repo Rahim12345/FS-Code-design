@@ -775,6 +775,10 @@ a.active{
             text-align: center;
             color: #000000;
         }
+        &-date{
+            padding-left:0px;
+            padding-right:0px;
+        }
     }
     &-image-col{
         text-align: center;
@@ -785,8 +789,9 @@ a.active{
             border-radius: 8px;
         }
         &-paragraphImage{
-            margin-bottom:8.33px;
-            margin-top:16px;
+            display: block;
+            margin-bottom: 56.33px;
+            margin-top:32px;
             width: 100%;
             max-width:800px;
         }
@@ -801,8 +806,13 @@ a.active{
             margin-top:32px;
             color: #343434;
         }
+        &-desc{
+            p{
+                display: block;
+                margin-bottom:36px;
+            }
+        }
         &-title{
-            //margin-bottom: 32px;
             margin-top:48px;
             font-family: $font-medium;
             font-size: 20px;
