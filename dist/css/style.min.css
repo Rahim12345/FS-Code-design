@@ -392,6 +392,10 @@ a {
   padding: 15px 32px;
 }
 
+.navbar {
+  border-bottom: 1px rgba(251, 245, 242, 0.5) solid;
+}
+
 .header .nav {
   border-bottom: 0;
 }
@@ -771,8 +775,8 @@ a {
 }
 
 .blog {
-  padding-top: 74px;
-  padding-bottom: 136px;
+  padding-top: 104px;
+  padding-bottom: 64px;
 }
 
 .blog-title {
@@ -786,6 +790,7 @@ a {
 
 .blog-items {
   margin-right: -32px;
+  margin-bottom: 72px;
 }
 
 .blog-item {
@@ -1015,4 +1020,100 @@ a {
 
 .ourvalue-values-value:last-child {
   margin-bottom: 0px;
+}
+
+.bloglink-items {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 72px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bloglink-items-bloglink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bloglink-items-bloglink-link {
+  color: #343434;
+  padding: 10px 16px;
+}
+
+.bloglink-items-bloglink-link:first-child {
+  margin-right: 32px;
+}
+
+.blog-section {
+  padding-top: 48px;
+  padding-bottom: 88px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px;
+}
+
+.pagination a {
+  font-family: "Euclid Circular Medium";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  margin-right: 40px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+
+.pagination-prev, .pagination-next {
+  font-family: "Euclid Circular Regular" !important;
+  border: 1px solid #E6E8EA;
+  padding-top: 7px !important;
+  padding-bottom: 9px !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #343434 !important;
+}
+
+.pagination-prev-arrow, .pagination-next-arrow {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+  margin-right: 11px;
+}
+
+.pagination-prev {
+  padding-right: 16px;
+  margin-right: 83px !important;
+}
+
+.pagination-next {
+  padding-left: 16px;
+  margin-left: 83px !important;
+}
+
+a.active {
+  background-color: #43BA7F;
+  color: #ffffff;
+  border-radius: 8px;
 }
