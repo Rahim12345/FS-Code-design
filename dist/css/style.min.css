@@ -1047,6 +1047,9 @@ a {
 .bloglink-items-bloglink-link {
   color: #343434;
   padding: 10px 16px;
+  font-family: "Euclid Circular Medium";
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .bloglink-items-bloglink-link:first-child {
@@ -1054,8 +1057,8 @@ a {
 }
 
 .blog-section {
-  padding-top: 48px;
-  padding-bottom: 88px;
+  margin-top: 48px;
+  margin-bottom: 88px;
 }
 
 .pagination {
@@ -1069,7 +1072,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 120px;
+  margin-top: 48px;
 }
 
 .pagination a {
@@ -1078,8 +1081,8 @@ a {
   line-height: 25px;
   text-align: center;
   color: #000000;
-  margin-right: 40px;
-  padding-top: 8px;
+  margin-right: 20px;
+  padding-top: 7px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 8px;
@@ -1093,23 +1096,24 @@ a {
   font-size: 16px !important;
   line-height: 20px !important;
   color: #343434 !important;
+  border-radius: 8px;
 }
 
-.pagination-prev-arrow, .pagination-next-arrow {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 16px;
+.pagination-prev-leftarrow, .pagination-next-leftarrow {
   margin-right: 11px;
 }
 
+.pagination-prev-rightarrow, .pagination-next-rightarrow {
+  margin-left: 11px;
+}
+
 .pagination-prev {
-  padding-right: 16px;
-  margin-right: 83px !important;
+  margin-right: 74px !important;
 }
 
 .pagination-next {
-  padding-left: 16px;
-  margin-left: 83px !important;
+  margin-left: 53px !important;
+  margin-right: 0px !important;
 }
 
 a.active {

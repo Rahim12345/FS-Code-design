@@ -689,6 +689,9 @@ a {
         &-link{
             color: #343434;
             padding: 10px 16px;
+            font-family: $font-medium;
+            font-size: 16px;
+            line-height: 20px;
         }
         &-link:first-child{
             margin-right:32px;
@@ -697,15 +700,16 @@ a {
     
 }
 .blog-section{
-    padding-top: 48px;
-    padding-bottom: 88px;
+    margin-top: 48px;
+    margin-bottom: 88px;
 }
 .pagination{
+
     display:flex;
     min-height: 40px;
     justify-content:center;
     align-items:center;
-    margin-top:120px;
+    margin-top:48px;
     
     a{
         font-family: $font-medium;
@@ -713,12 +717,13 @@ a {
         line-height: 25px;
         text-align: center;
         color: #000000;
-        margin-right: 40px;
-        padding-top: 8px;
+        margin-right: 20px;
+        padding-top: 7px;
         padding-left:10px;
         padding-right:10px;
         padding-bottom:8px;
     }
+
     &-prev, &-next{
         font-family: $font-regular !important;
         border: 1px solid #E6E8EA;
@@ -727,24 +732,27 @@ a {
         font-size: 16px !important;
         line-height: 20px !important;
         color: #343434 !important;
+        border-radius: 8px;
         
-        &-arrow{
-        padding-top:13px;
-        padding-bottom: 13px;
-        padding-left:16px;
-        margin-right:11px;
+        &-leftarrow{
+            margin-right:11px;
+        }
+        &-rightarrow{
+            margin-left:11px;
+        }
     }
-}
+
     &-prev{
-        padding-right: 16px;
-        margin-right: 83px !important;
+        margin-right: 74px !important;
     }
+
     &-next{
-        padding-left: 16px;
-        margin-left: 83px !important;
+        margin-left: 53px !important;
+        margin-right: 0px !important;
     }
 }
 a.active{
+
     background-color: #43BA7F;
     color: #ffffff;
     border-radius: 8px;
