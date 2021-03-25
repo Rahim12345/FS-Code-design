@@ -1,5 +1,9 @@
 @import "fs.scss";
-
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   background-color: #ffffff;
@@ -39,17 +43,29 @@ a {
     font-size: 34px;
     line-height: 43px;
     text-align: center;
-    color: #000000;
+    color: #212121;
     font-family: $font-medium;
     margin-top: 48px;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 32px;
+    }
   }
   &-paragraph {
     font-size: 20px;
     line-height: 36px;
     text-align: center;
     max-width: 70%;
-    margin: 48px auto 44px;
+    color: #343434;
+    margin: 47px auto 57px;
     font-family: $font-regular;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 32px auto 48px;
+      max-width: 90%;
+    }
   }
 }
 
@@ -59,6 +75,9 @@ a {
   align-items: center;
   padding: 24px 112px;
   border-bottom: #fbf5f2;
+  @media screen and (max-width: 920px) {
+    padding:20px 16px;
+  }
 
   &-links {
     display: flex;
@@ -74,6 +93,15 @@ a {
       color: $color-sucess;
     }
   }
+  &-homepagelink{
+    color: #ffffff;
+    margin-right: 56px;
+
+    &:hover,
+    &:active {
+      color: $color-sucess;
+    }
+  }
 
   &-btn {
     background: #43ba7f;
@@ -82,23 +110,31 @@ a {
     line-height: 18px;
     color: #fff;
     padding: 15px 32px;
+
   }
-}
-.navbar {
-  border-bottom: 1px #fbf5f2 solid;
-}
-.header .nav {
-  border-bottom: 0;
-
-  &-link {
-    color: #ffffff;
-
-    &:hover,
-    &:active {
-      color: $color-sucess;
+  &-icon {
+    display: none;
+    margin-left:16px;
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (max-width: 920px) {
+    &-icon {
+      display: block;
+    }
+    &-list{
+      display: none;
+    }
+    &-row{
+      display: flex;
+      align-items: center;
     }
   }
 }
+.hamburger {
+  display: none;
+}
+
 
 .services {
   background-color: #fbf5f2;
@@ -498,6 +534,10 @@ a {
   &-logo {
     & > svg {
       display: block;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        width: 132px;
+        height: 40px;
+      }
     }
   }
 
@@ -509,9 +549,18 @@ a {
     margin-bottom: 38px;
     display: flex;
     align-items: center;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 14px;
+      color: #6e7581;
+    }
 
     & > svg {
       margin-right: 10px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        width: 16px;
+        height: 16px;
+        color: #6e7581;
+      }
     }
   }
 
@@ -533,6 +582,10 @@ a {
       line-height: 24px;
       color: #6e7581;
       margin-bottom: 16px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
 
       &:hover,
       &:active {
@@ -583,19 +636,30 @@ a {
         margin-right: 16px;
       }
     }
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-top: 28px;
+    }
   }
 }
 .mission {
-  background-color: #343434;
-
+  background-color: #02172c;
+  &-logo {
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
   &-heading {
     color: #ffffff;
     font-family: $font-medium;
     font-size: 20px;
     margin-top: 40px;
     line-height: 25px;
-    font-weight: normal;
-    font-style: normal;
   }
   &-paragraph {
     color: #ffffff;
@@ -616,6 +680,22 @@ a {
     margin-top: 68px;
     margin-bottom: 92px;
   }
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    &-ourmissioncontainer {
+      margin-top: 48px;
+      margin-bottom: 24px;
+      min-width: 328px;
+    }
+    &-ourvisioncontainer {
+      margin-top: 24px;
+      margin-bottom: 48px;
+      min-width: 328px;
+    }
+    &-heading {
+      font-weight: 500;
+      margin-top: 24px;
+    }
+  }
 }
 .ourvalue {
   &-centered {
@@ -623,8 +703,12 @@ a {
   }
 
   &-values {
-    margin-top: 92px;
+    margin-top: 80px;
     margin-bottom: 88px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-top: 48px;
+      margin-bottom: 72px;
+    }
 
     &-heading {
       font-family: $font-medium;
@@ -635,13 +719,23 @@ a {
       color: #343434;
       margin-bottom: 48px;
       margin-left: 24px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        margin-bottom: 40px;
+        text-align: center;
+      }
     }
     &-value {
       background: #faf4e7;
       border-radius: 16px;
       margin-bottom: 24px;
       display: flex;
+      align-items: center;
       min-height: 88px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        margin-bottom: 16px;
+        min-height: 72px;
+        border-radius: 8px;
+      }
 
       svg {
         margin-top: 32px;
@@ -649,6 +743,14 @@ a {
         margin-left: 24px;
         margin-right: 24px;
         flex-shrink: 0;
+        @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+          width: 12px;
+          height: 12px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          margin-left: 16px;
+          margin-right: 16px;
+        }
       }
       &-text {
         margin-top: 28px;
@@ -660,6 +762,15 @@ a {
         line-height: 32px;
         color: #343434;
         margin-right: 106px;
+        @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+          font-size: 16px;
+          line-height: 20px;
+          max-height: 40px;
+          min-width: 268px;
+          margin-top: 16px;
+          margin-bottom: 16px;
+          margin-right: 16px;
+        }
       }
     }
     &-value:last-child {
@@ -936,10 +1047,10 @@ a.active {
     }
   }
   &-details {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
     &-col {
-        margin-bottom:80px;
+      margin-bottom: 80px;
       &-item {
         font-family: $font-medium;
         font-size: 20px;
@@ -949,12 +1060,17 @@ a.active {
         max-width: 174px;
       }
     }
-    &-col:first-child{
-        margin-right: 150px;
+    &-col:first-child {
+      margin-right: 150px;
     }
-    &-col:nth-child(2)
-    {
-        margin-right: 147px;
+    &-col:nth-child(2) {
+      margin-right: 147px;
     }
+  }
+}
+
+@media screen and (max-width: $mediumWidth) {
+  .fslogo {
+    width: 114.85px;
   }
 }

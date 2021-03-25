@@ -296,6 +296,12 @@
   }
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background-color: #ffffff;
@@ -337,9 +343,17 @@ a {
   font-size: 34px;
   line-height: 43px;
   text-align: center;
-  color: #000000;
+  color: #212121;
   font-family: "Euclid Circular Medium";
   margin-top: 48px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header-Title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 32px;
+  }
 }
 
 .header-paragraph {
@@ -347,8 +361,18 @@ a {
   line-height: 36px;
   text-align: center;
   max-width: 70%;
-  margin: 48px auto 44px;
+  color: #343434;
+  margin: 47px auto 57px;
   font-family: "Euclid Circular Regular";
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px auto 48px;
+    max-width: 90%;
+  }
 }
 
 .nav {
@@ -363,6 +387,12 @@ a {
           align-items: center;
   padding: 24px 112px;
   border-bottom: #fbf5f2;
+}
+
+@media screen and (max-width: 920px) {
+  .nav {
+    padding: 20px 16px;
+  }
 }
 
 .nav-links {
@@ -383,6 +413,15 @@ a {
   color: #43BA7F;
 }
 
+.nav-homepagelink {
+  color: #ffffff;
+  margin-right: 56px;
+}
+
+.nav-homepagelink:hover, .nav-homepagelink:active {
+  color: #43BA7F;
+}
+
 .nav-btn {
   background: #43ba7f;
   border-radius: 24px;
@@ -392,20 +431,32 @@ a {
   padding: 15px 32px;
 }
 
-.navbar {
-  border-bottom: 1px #fbf5f2 solid;
+.nav-icon {
+  display: none;
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
 }
 
-.header .nav {
-  border-bottom: 0;
+@media screen and (max-width: 920px) {
+  .nav-icon {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.header .nav-link {
-  color: #ffffff;
-}
-
-.header .nav-link:hover, .header .nav-link:active {
-  color: #43BA7F;
+.hamburger {
+  display: none;
 }
 
 .services {
@@ -840,6 +891,13 @@ a {
   display: block;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .footer-logo > svg {
+    width: 132px;
+    height: 40px;
+  }
+}
+
 .footer-copyright {
   font-size: 16px;
   line-height: 24px;
@@ -854,8 +912,23 @@ a {
           align-items: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .footer-copyright {
+    font-size: 14px;
+    color: #6e7581;
+  }
+}
+
 .footer-copyright > svg {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .footer-copyright > svg {
+    width: 16px;
+    height: 16px;
+    color: #6e7581;
+  }
 }
 
 .footer-social-networks {
@@ -877,6 +950,13 @@ a {
   line-height: 24px;
   color: #6e7581;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .footer-links > a {
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-links > a:hover, .footer-links > a:active {
@@ -929,8 +1009,33 @@ a {
   margin-right: 16px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .footer-subscribe {
+    margin-top: 28px;
+  }
+}
+
 .mission {
-  background-color: #343434;
+  background-color: #02172c;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .mission-logo {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .mission {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .mission-heading {
@@ -939,8 +1044,6 @@ a {
   font-size: 20px;
   margin-top: 40px;
   line-height: 25px;
-  font-weight: normal;
-  font-style: normal;
 }
 
 .mission-paragraph {
@@ -965,6 +1068,23 @@ a {
   margin-bottom: 92px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .mission-ourmissioncontainer {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    min-width: 328px;
+  }
+  .mission-ourvisioncontainer {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    min-width: 328px;
+  }
+  .mission-heading {
+    font-weight: 500;
+    margin-top: 24px;
+  }
+}
+
 .ourvalue-centered {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -972,8 +1092,15 @@ a {
 }
 
 .ourvalue-values {
-  margin-top: 92px;
+  margin-top: 80px;
   margin-bottom: 88px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .ourvalue-values {
+    margin-top: 48px;
+    margin-bottom: 72px;
+  }
 }
 
 .ourvalue-values-heading {
@@ -987,6 +1114,13 @@ a {
   margin-left: 24px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .ourvalue-values-heading {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
 .ourvalue-values-value {
   background: #faf4e7;
   border-radius: 16px;
@@ -994,7 +1128,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 88px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .ourvalue-values-value {
+    margin-bottom: 16px;
+    min-height: 72px;
+    border-radius: 8px;
+  }
 }
 
 .ourvalue-values-value svg {
@@ -1004,6 +1149,17 @@ a {
   margin-right: 24px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .ourvalue-values-value svg {
+    width: 12px;
+    height: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 .ourvalue-values-value-text {
@@ -1016,6 +1172,18 @@ a {
   line-height: 32px;
   color: #343434;
   margin-right: 106px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .ourvalue-values-value-text {
+    font-size: 16px;
+    line-height: 20px;
+    max-height: 40px;
+    min-width: 268px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
 }
 
 .ourvalue-values-value:last-child {
@@ -1376,4 +1544,10 @@ a.active {
 
 .contact-details-col:nth-child(2) {
   margin-right: 147px;
+}
+
+@media screen and (max-width: 768px) {
+  .fslogo {
+    width: 114.85px;
+  }
 }

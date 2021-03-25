@@ -12,6 +12,7 @@
       <nav class="nav navbar">
         <a href="index.html">
           <svg
+            class="fslogo"
             width="156"
             height="48"
             viewBox="0 0 156 48"
@@ -39,11 +40,53 @@
           </svg>
         </a>
         <div></div>
-        <div>
-          <a class="nav-link" href="#">Products</a>
-          <a class="nav-link" href="about.html">About us</a>
-          <a class="nav-link" href="blog.html">Blog</a>
+        <div class="nav-row">
+          <span class="nav-list">
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+          </span>
           <a class="nav-btn" href="contact.html">Contact us</a>
+          <a href="javascript:void(0);" class="nav-icon" onclick="hamburger()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12H21"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 6H21"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3 18H21"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <nav class="hamburger" id="nav-list">
+        <div class="container">
+          <div class="row">
+            <a class="col-12 nav-link" href="#">Products</a>
+            <a class="col-12 nav-link" href="about.html">About us</a>
+            <a class="col-12 nav-link" href="blog.html">Blog</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -56,7 +99,9 @@
                 The Best Effective Instagram Story Ideas To Increase Your Brand
                 Engagement
               </h1>
-              <div class="blog-item-date content-col-date">February 20, 2021</div>
+              <div class="blog-item-date content-col-date">
+                February 20, 2021
+              </div>
             </div>
             <div class="col-12 content-image-col">
               <img
@@ -74,7 +119,7 @@
                   way to communicate with customers. Here in our blog, we shared
                   the best effective Instagram story ideas.
                 </p>
-                
+
                 <p>
                   The more static conventional Instagram posts are probably
                   good, but you have the opportunity to "tell your story" with
@@ -83,7 +128,7 @@
                   are. They want some insight into the ideals and past of your
                   brand.
                 </p>
-                
+
                 <p>
                   The best thing about integrating stories from Instagram into
                   your marketing campaign for your brand is that getting started
@@ -91,7 +136,7 @@
                   and interact with your potential customers with a few social
                   networks.
                 </p>
-                
+
                 <p>
                   Instagram stories are the best way to do precisely that,
                   whether you're trying to advertise a new product or service or
@@ -100,7 +145,7 @@
                   the perfect way to bring attention to your story and get
                   viewers to watch it?
                 </p>
-                
+
                 <p>
                   In terms of making an Instagram post, the best way to start is
                   to get a grip on your followers first. You ought to build the
@@ -108,7 +153,7 @@
                   you captivate the audiences you intend to turn to consumers
                   and entertain them?
                 </p>
-                
+
                 <p>
                   First of all, you would want to do a little research on social
                   media. Check to see what sort of stuff your followers prefer
@@ -118,7 +163,7 @@
                   followers' patterns regarding how, where, and with what sort
                   of content they connect.
                 </p>
-                
+
                 <p>
                   When you know what kind of content your customers want to see,
                   you are now able to build your first story for Instagram.
@@ -163,7 +208,8 @@
                 </p>
               </div>
               <div class="content-image-col">
-                <img style="margin-bottom:48px;"
+                <img
+                  style="margin-bottom: 48px"
                   class="content-image-col-paragraphImage"
                   src="dist/img/polls.jpg"
                   alt="sad"
@@ -418,5 +464,6 @@
         </div>
       </div>
     </footer>
+    <script src="./dist/js/hamburger.js"></script>
   </body>
 </html>
