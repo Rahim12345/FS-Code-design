@@ -839,6 +839,13 @@ a {
   font-family: "Euclid Circular Medium";
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .blog-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 .blog-items {
   margin-right: -32px;
   margin-bottom: 72px;
@@ -910,6 +917,8 @@ a {
 @media screen and (min-width: 320px) and (max-width: 1200px) {
   .blog-item-date {
     padding: 0;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -1439,13 +1448,15 @@ a.active {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #000000;
+  color: #212121;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .content-col-title {
     margin-top: 40px;
     margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -1534,6 +1545,15 @@ a.active {
   line-height: 43px;
   text-align: center;
   margin-top: 47px;
+  color: #212121;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-title {
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .contact-subtitle {
@@ -1548,12 +1568,28 @@ a.active {
   margin-top: 48px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-subtitle {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .contact-getintouch {
   font-family: "Euclid Circular Regular";
   font-size: 20px;
   line-height: 32px;
   color: #677480;
   margin-top: 64px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-getintouch {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .contact-formTitle {
@@ -1565,9 +1601,23 @@ a.active {
   max-width: 417px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-formTitle {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 297px;
+  }
+}
+
 .contact-form {
   border-bottom: 1px #ccd1d5 solid;
   margin-bottom: 72px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form {
+    margin-bottom: 0px;
+  }
 }
 
 .contact-form-input {
@@ -1582,6 +1632,16 @@ a.active {
   background-color: #faf4e7;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-input {
+    margin-right: 0px;
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+}
+
 .contact-form-input::-webkit-input-placeholder {
   font-family: "Euclid Circular Medium";
   line-height: 25px;
@@ -1589,6 +1649,13 @@ a.active {
   font-size: 20px;
   color: #ff8145;
   opacity: 0.4;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .contact-form-category {
@@ -1604,6 +1671,17 @@ a.active {
   opacity: 0.4;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-category {
+    width: 100%;
+    margin-top: 32px;
+    margin-right: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align-last: center;
+  }
+}
+
 .contact-form-input-label {
   margin-right: 24px;
   font-family: "Euclid Circular Medium";
@@ -1612,12 +1690,34 @@ a.active {
   color: #212121;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-input-label {
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 0px;
+    margin-top: 40px;
+    display: block;
+  }
+}
+
 .contact-form-firstrow {
   margin-top: 68px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-firstrow {
+    margin-top: 64px;
+  }
+}
+
 .contact-form-secondrow {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-secondrow {
+    margin-top: 40px;
+  }
 }
 
 .contact-form-thirdrow {
@@ -1627,11 +1727,28 @@ a.active {
   display: flex;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-thirdrow {
+    margin-top: 48px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contact-form-checkbox-label {
   font-size: 20px;
   line-height: 25px;
   color: #354556;
   font-family: "Euclid Circular Regular";
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-checkbox-label {
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
 }
 
 .contact-form-checkbox {
@@ -1645,9 +1762,22 @@ a.active {
   height: 24px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-checkbox {
+    margin-right: 16px;
+  }
+}
+
 .contact-form-fourthrow {
   margin-top: 64px;
   margin-bottom: 104px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-fourthrow {
+    margin-top: 54px;
+    margin-bottom: 64px;
+  }
 }
 
 .contact-form-btn {
@@ -1659,6 +1789,12 @@ a.active {
   line-height: 18px;
   color: #fff;
   padding: 15px 32px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-form-btn {
+    width: 100%;
+  }
 }
 
 .contact-form-btn-arrow {
@@ -1674,8 +1810,23 @@ a.active {
           justify-content: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-details {
+    text-align: center;
+    display: block;
+    padding-bottom: 32px;
+  }
+}
+
 .contact-details-col {
   margin-bottom: 80px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-details-col {
+    margin-bottom: 0px;
+    margin-top: 56px;
+  }
 }
 
 .contact-details-col-item {
@@ -1687,12 +1838,38 @@ a.active {
   max-width: 174px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-details-col-item {
+    max-width: 100%;
+  }
+}
+
 .contact-details-col:first-child {
   margin-right: 150px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-details-col:first-child {
+    margin-right: 0;
+    margin-top: 40px;
+  }
+}
+
 .contact-details-col:nth-child(2) {
   margin-right: 147px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-details-col:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  .contact-details-col:last-child {
+    max-width: 174px;
+    margin: 56px auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
