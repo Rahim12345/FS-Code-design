@@ -76,7 +76,7 @@ a {
   padding: 24px 112px;
   border-bottom: #fbf5f2;
   @media screen and (max-width: 920px) {
-    padding:20px 16px;
+    padding: 20px 16px;
   }
 
   &-links {
@@ -93,7 +93,7 @@ a {
       color: $color-sucess;
     }
   }
-  &-homepagelink{
+  &-homepagelink {
     color: #ffffff;
     margin-right: 56px;
 
@@ -110,11 +110,10 @@ a {
     line-height: 18px;
     color: #fff;
     padding: 15px 32px;
-
   }
   &-icon {
     display: none;
-    margin-left:16px;
+    margin-left: 16px;
     width: 24px;
     height: 24px;
   }
@@ -122,10 +121,10 @@ a {
     &-icon {
       display: block;
     }
-    &-list{
+    &-list {
       display: none;
     }
-    &-row{
+    &-row {
       display: flex;
       align-items: center;
     }
@@ -134,7 +133,6 @@ a {
 .hamburger {
   display: none;
 }
-
 
 .services {
   background-color: #fbf5f2;
@@ -485,10 +483,16 @@ a {
   &-items {
     margin-right: -32px;
     margin-bottom: 72px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-bottom: 0px;
+    }
   }
 
   &-item {
     padding-right: 32px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-bottom: 48px;
+    }
 
     &-image {
       width: 100%;
@@ -796,12 +800,30 @@ a {
     }
     &-link:first-child {
       margin-right: 32px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        margin-right: 16px;
+      }
     }
+  }
+}
+@media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+  .bloglink-items {
+    margin-bottom: 40px;
   }
 }
 .blog-section {
   margin-top: 48px;
   margin-bottom: 88px;
+}
+@media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+  .blog-section {
+    margin-top: 32px;
+    margin-bottom: 72px;
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
 }
 .pagination {
   display: flex;
@@ -809,6 +831,9 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 48px;
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    margin-top: 24px;
+  }
 
   a {
     font-family: $font-medium;
@@ -821,6 +846,14 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 8px;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      margin-right: 12px;
+    }
+  }
+  @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+   &-fourhide{
+     display:none;
+   }
   }
 
   &-prev,
@@ -833,22 +866,46 @@ a {
     line-height: 20px !important;
     color: #343434 !important;
     border-radius: 8px;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      padding: 13px 15px !important;
+    }
 
     &-leftarrow {
       margin-right: 11px;
+      @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+        margin: 0px;
+      }
+      
     }
     &-rightarrow {
       margin-left: 11px;
+      @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+        margin: 0px;
+      }
     }
   }
 
   &-prev {
     margin-right: 74px !important;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      margin-right: 20px !important;
+    }
   }
 
   &-next {
     margin-left: 53px !important;
     margin-right: 0px !important;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      margin-left: 8px !important;
+      margin-right: 0px i !important;
+    }
+  }
+  &-prev,&-next{
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      &-text{
+        display: none;
+      }
+    }
   }
 }
 a.active {
