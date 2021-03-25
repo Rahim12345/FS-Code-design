@@ -506,6 +506,9 @@ a {
       font-size: 16px;
       line-height: 20px;
       color: #43ba7f;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        padding:16px 0px;
+      }
     }
 
     &-title {
@@ -515,6 +518,10 @@ a {
       color: #000000;
       font-family: $font-medium;
       display: block;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        padding: 0;
+        padding-bottom: 16px;
+      }
 
       &:hover,
       &:active {
@@ -527,6 +534,9 @@ a {
       font-size: 16px;
       line-height: 20px;
       color: #8b8b8b;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        padding: 0;
+      }
     }
   }
 }
@@ -1129,5 +1139,6 @@ a.active {
 @media screen and (max-width: $mediumWidth) {
   .fslogo {
     width: 114.85px;
+    height: 32.81px;
   }
 }

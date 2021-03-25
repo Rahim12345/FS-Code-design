@@ -874,6 +874,12 @@ a {
   color: #43ba7f;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .blog-item-category {
+    padding: 16px 0px;
+  }
+}
+
 .blog-item-title {
   padding: 0 24px 12px;
   font-size: 24px;
@@ -881,6 +887,13 @@ a {
   color: #000000;
   font-family: "Euclid Circular Medium";
   display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .blog-item-title {
+    padding: 0;
+    padding-bottom: 16px;
+  }
 }
 
 .blog-item-title:hover, .blog-item-title:active {
@@ -892,6 +905,12 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #8b8b8b;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .blog-item-date {
+    padding: 0;
+  }
 }
 
 .footer {
@@ -1639,5 +1658,6 @@ a.active {
 @media screen and (max-width: 768px) {
   .fslogo {
     width: 114.85px;
+    height: 32.81px;
   }
 }
