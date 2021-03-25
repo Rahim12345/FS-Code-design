@@ -507,7 +507,7 @@ a {
       line-height: 20px;
       color: #43ba7f;
       @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
-        padding:16px 0px;
+        padding: 16px 0px;
       }
     }
 
@@ -807,6 +807,7 @@ a {
       font-family: $font-medium;
       font-size: 16px;
       line-height: 20px;
+      white-space: nowrap;
     }
     &-link:first-child {
       margin-right: 32px;
@@ -861,9 +862,9 @@ a {
     }
   }
   @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
-   &-fourhide{
-     display:none;
-   }
+    &-fourhide {
+      display: none;
+    }
   }
 
   &-prev,
@@ -885,7 +886,6 @@ a {
       @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
         margin: 0px;
       }
-      
     }
     &-rightarrow {
       margin-left: 11px;
@@ -910,9 +910,10 @@ a {
       margin-right: 0px i !important;
     }
   }
-  &-prev,&-next{
+  &-prev,
+  &-next {
     @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
-      &-text{
+      &-text {
         display: none;
       }
     }
@@ -923,12 +924,22 @@ a.active {
   color: #ffffff;
   border-radius: 8px;
 }
+@media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+  section .container {
+      padding-right:16px;
+      padding-left: 16px;
+    }
+  
+}
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #e6e8ea;
   padding-bottom: 64px;
+  @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+    padding-bottom: 80px;
+  }
   &-col {
     text-align: center;
     max-width: 592px;
@@ -940,6 +951,10 @@ a.active {
       line-height: 32px;
       text-align: center;
       color: #000000;
+      @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+        margin-top: 40px;
+        margin-bottom: 16px;
+      }
     }
     &-date {
       padding-left: 0px;
@@ -953,6 +968,9 @@ a.active {
       max-width: 1008px;
       width: 100%;
       border-radius: 8px;
+      @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+        margin-top: 24px;
+      }
     }
     &-paragraphImage {
       display: block;
@@ -965,6 +983,9 @@ a.active {
   &-paragraph {
     margin-top: 16px;
     max-width: 800px;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      margin-top: 0px;
+    }
     &-p {
       font-family: $font-regular;
       font-size: 16px;
@@ -990,6 +1011,10 @@ a.active {
 .similar-blogs {
   margin-top: 64px;
   margin-bottom: 136px;
+  @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+    margin-top: 40px;
+    margin-bottom: 72px;
+  }
 }
 
 .contact {
