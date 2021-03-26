@@ -19,7 +19,6 @@ a {
   background-image: url("../img/header-bg.png");
   background-size: cover;
   height: 100vh;
-
   &-title {
     font-size: 96px;
     line-height: 120px;
@@ -28,6 +27,15 @@ a {
     max-width: 70%;
     margin: 96px auto 63px;
     font-family: $font-medium;
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      font-size: 34px;
+      line-height: 48px;
+      margin-top: 111px;
+      margin-bottom: 125px;
+      margin-right: 18px;
+      margin-left: 18px;
+      max-width: 100%;
+    }
   }
 
   &-hero {
@@ -37,6 +45,10 @@ a {
     & > img {
       display: block;
       width: 100%;
+    }
+    @media screen and (min-width: $smallWidth) and (max-width: $mediumWidth) {
+      max-width: 100%;
+      margin: auto 29px;
     }
   }
   &-Title {
@@ -137,6 +149,9 @@ a {
 .services {
   background-color: #fbf5f2;
   padding: 325px 0 104px;
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    padding: 153px 0 0;
+  }
 
   &-title {
     font-weight: normal;
@@ -146,6 +161,12 @@ a {
     color: #43ba7f;
     margin-bottom: 16px;
     font-family: $font-medium;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
   }
 
   &-desc {
@@ -153,6 +174,13 @@ a {
     font-size: 34px;
     line-height: 43px;
     color: #212121;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 56px;
+    }
   }
 
   &-items {
@@ -161,10 +189,25 @@ a {
   &-item {
     margin-bottom: 48px;
     display: flex;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      display: block;
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
 
     &-shape {
       display: block;
       margin-right: 64px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        margin-right: 0px;
+        margin-bottom: 24px;
+      }
     }
 
     &-title {
@@ -173,6 +216,9 @@ a {
       color: #212121;
       margin-bottom: 24px;
       font-family: $font-medium;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        margin-bottom: 16px;
+      }
     }
 
     &-desc {
@@ -192,6 +238,13 @@ a {
     text-align: center;
     color: #212121;
     margin-bottom: 72px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 56px;
+    }
   }
 
   &-items {
@@ -199,6 +252,10 @@ a {
     padding-top: 100px;
     margin-right: -32px;
     border-bottom: 1px solid #e6e8ea;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-top: 56px;
+      padding-bottom: 16px;
+    }
   }
 
   &-item {
@@ -207,6 +264,9 @@ a {
     align-items: center;
     justify-content: center;
     padding-right: 32px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-right: 16px;
+    }
 
     & > img {
       display: block;
@@ -220,6 +280,10 @@ a {
     padding-top: 86px;
     padding-bottom: 104px;
     margin-right: -32px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-top: 48px;
+      display: block;
+    }
   }
 
   &-col {
@@ -234,6 +298,11 @@ a {
     font-size: 20px;
     line-height: 25px;
     color: #43ba7f;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+    }
   }
 
   &-desc {
@@ -243,11 +312,21 @@ a {
     color: #212121;
     margin-bottom: 35px;
     width: 50%;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &-item {
     & > img {
       width: 100%;
+    }
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-top: 40px;
     }
   }
 
@@ -260,6 +339,12 @@ a {
     color: #3878f2;
     justify-content: flex-end;
     align-items: center;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-top: 48px;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 20px;
+    }
 
     & > svg {
       display: block;
@@ -272,7 +357,16 @@ a {
   background-color: #0d1118;
   padding-top: 96px;
   padding-bottom: 96px;
-
+  &-items {
+    display: flex;
+  }
+  @media screen and (min-width: $smallWidth) and (max-width: 1400px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    &-items {
+      overflow-x: auto;
+    }
+  }
   &-title {
     font-weight: normal;
     margin: 0;
@@ -281,14 +375,23 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 30.43px;
+    line-height: 30px;
     color: #fff;
     font-size: 24px;
     font-family: $font-medium;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      transform: rotate(0deg);
+      margin-bottom: 48px;
+    }
   }
 
   &-item {
     padding-left: 32px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-left: 0px;
+      padding-right: 16px;
+      min-width: 176px;
+    }
 
     &-content {
       border: 1px solid #343434;
@@ -328,6 +431,10 @@ a {
   padding-top: 72px;
   padding-bottom: 140px;
   background-color: #faf4e7;
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
 
   &-title {
     font-weight: normal;
@@ -338,6 +445,11 @@ a {
     line-height: 25px;
     margin-bottom: 16px;
     white-space: nowrap;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
   }
 
   &-desc {
@@ -347,6 +459,11 @@ a {
     color: #212121;
     margin-bottom: 72px;
     font-family: $font-medium;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-bottom: 70px;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &-items {
@@ -356,6 +473,12 @@ a {
 
   &-item {
     padding-right: 40px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-left: 32px;
+      margin-right: 64px;
+      margin-bottom: 24px;
+      padding-right: 0;
+    }
 
     &-content {
       background-color: #fff;
@@ -370,6 +493,10 @@ a {
       line-height: 64px;
       color: #0d1118;
       font-family: $font-medium;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        font-size: 34px;
+        line-height: 43px;
+      }
     }
 
     &-divider {
@@ -384,6 +511,9 @@ a {
       line-height: 32px;
       text-align: center;
       color: #354556;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        line-height: 25px;
+      }
     }
   }
 }
@@ -391,6 +521,9 @@ a {
 .reviews {
   background: #0d1118;
   padding: 64px 0;
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    padding-top: 48px;
+  }
 
   &-title {
     font-weight: normal;
@@ -404,11 +537,19 @@ a {
     justify-content: center;
     font-family: "Euclid Circular Medium";
     white-space: nowrap;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      transform: rotate(0deg);
+      margin-bottom: 64px;
+    }
   }
 
   &-shape {
     & > svg {
       display: block;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -418,6 +559,9 @@ a {
     width: 50px;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      margin-left: auto;
+    }
 
     &-prev,
     &-next {
@@ -429,6 +573,9 @@ a {
 
   &-items {
     padding-top: 56px;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-top: 0px;
+    }
   }
 
   &-item {
@@ -470,6 +617,10 @@ a {
 .blog {
   padding-top: 104px;
   padding-bottom: 64px;
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    padding-bottom: 72px;
+    padding-top: 64px;
+  }
 
   &-title {
     text-align: center;
@@ -489,6 +640,23 @@ a {
     margin-bottom: 72px;
     @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
       margin-bottom: 0px;
+    }
+    &-link {
+      display: none;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        justify-content: center;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        color: #3878f2;
+      }
+
+      & > svg {
+        display: block;
+        margin-left: 16px;
+      }
     }
   }
 
@@ -550,13 +718,22 @@ a {
 .footer {
   background-color: #0d1118;
   padding: 56px 0 104px;
-
+  @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+    padding: 40px 0 0;
+  }
+  .container {
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
   &-logo {
     & > svg {
       display: block;
       @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
         width: 132px;
         height: 40px;
+        margin: 0 auto;
       }
     }
   }
@@ -570,16 +747,26 @@ a {
     display: flex;
     align-items: center;
     @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
-      font-size: 14px;
-      color: #6e7581;
+      display: none;
     }
 
     & > svg {
       margin-right: 10px;
-      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
-        width: 16px;
-        height: 16px;
-        color: #6e7581;
+    }
+  }
+  &-copyrightmobile {
+    display: none;
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      font-size: 14px;
+      line-height: 24px;
+      color: #6E7581;
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top:1px solid #343434;
+      & > svg {
+        margin-right: 10px;
       }
     }
   }
@@ -594,9 +781,36 @@ a {
         margin-right: 0;
       }
     }
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      display: none;
+    }
+  }
+  &-social-networksmobile {
+    display: none;
+    & > a {
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
   }
 
   &-links {
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 56px;
+    }
+
     & > a {
       font-size: 16px;
       line-height: 24px;
@@ -615,12 +829,20 @@ a {
   }
 
   &-subscribe {
+    @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     &-label {
       font-size: 16px;
       line-height: 24px;
       color: #6e7581;
       display: block;
       margin-bottom: 16px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
 
     &-input {
@@ -632,6 +854,9 @@ a {
       border-radius: 16px;
       margin-right: 8px;
       padding: 12px 15px;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        max-width: 228px;
+      }
     }
 
     &-btn {
@@ -651,6 +876,10 @@ a {
       margin-top: 32px;
       display: flex;
       align-items: center;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        line-height: 20px;
+        margin-top: 26px;
+      }
 
       & > svg {
         margin-right: 16px;
@@ -814,6 +1043,7 @@ a {
       font-size: 16px;
       line-height: 20px;
       white-space: nowrap;
+      overflow-x: auto;
     }
     &-link:first-child {
       margin-right: 32px;
@@ -1085,7 +1315,7 @@ a.active {
     border-bottom: 1px #ccd1d5 solid;
     margin-bottom: 72px;
     @media screen and (min-width: $smallWidth) and (max-width: 1220px) {
-      margin-bottom:0px;
+      margin-bottom: 0px;
     }
     &-input {
       margin-right: 56px;
@@ -1234,9 +1464,8 @@ a.active {
       @media screen and (min-width: $smallWidth) and (max-width: 1220px) {
         margin-bottom: 0px;
         margin-top: 56px;
-
       }
-      
+
       &-item {
         font-family: $font-medium;
         font-size: 20px;
@@ -1247,7 +1476,6 @@ a.active {
         @media screen and (min-width: $smallWidth) and (max-width: 1220px) {
           max-width: 100%;
         }
-
       }
     }
     &-col:first-child {
@@ -1255,7 +1483,6 @@ a.active {
       @media screen and (min-width: $smallWidth) and (max-width: 1220px) {
         margin-right: 0;
         margin-top: 40px;
-        
       }
     }
     &-col:nth-child(2) {
@@ -1264,11 +1491,10 @@ a.active {
         margin-right: 0;
       }
     }
-    &-col:last-child{
+    &-col:last-child {
       @media screen and (min-width: $smallWidth) and (max-width: 1220px) {
         max-width: 174px;
         margin: 56px auto;
-
       }
     }
   }
