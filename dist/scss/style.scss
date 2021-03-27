@@ -391,6 +391,7 @@ a {
     @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
       padding-left: 0px;
       padding-right: 16px;
+      min-width: 176px;
     }
 
     &-content {
@@ -553,6 +554,7 @@ a {
       @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
         width: 40px;
         height: 40px;
+        
       }
     }
   }
@@ -565,6 +567,9 @@ a {
     align-items: center;
     @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
       margin-left: auto;
+      position: relative;
+      top: -25px;
+      margin-bottom: 48px;
     }
 
     &-prev,
@@ -588,6 +593,9 @@ a {
       line-height: 24px;
       margin-bottom: 64px;
       color: #ffffff;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        margin-top: -17px;
+      }
     }
 
     &-author {

@@ -796,6 +796,7 @@ a {
   .we-item {
     padding-left: 0px;
     padding-right: 16px;
+    min-width: 176px;
   }
 }
 
@@ -1026,6 +1027,9 @@ a {
 @media screen and (min-width: 320px) and (max-width: 1200px) {
   .reviews-nav {
     margin-left: auto;
+    position: relative;
+    top: -25px;
+    margin-bottom: 48px;
   }
 }
 
@@ -1048,6 +1052,12 @@ a {
   line-height: 24px;
   margin-bottom: 64px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .reviews-item-content {
+    margin-top: -17px;
+  }
 }
 
 .reviews-item-author {
