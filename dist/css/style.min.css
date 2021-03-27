@@ -315,7 +315,6 @@ a {
 
 .header {
   background-image: url("../img/header-bg.png");
-  background-size: cover;
   height: 100vh;
 }
 
@@ -648,6 +647,7 @@ a {
   .products-items {
     padding-top: 48px;
     display: block;
+    padding-bottom: 72px;
   }
 }
 
@@ -796,7 +796,6 @@ a {
   .we-item {
     padding-left: 0px;
     padding-right: 16px;
-    min-width: 176px;
   }
 }
 
@@ -935,6 +934,13 @@ a {
   background-color: #e6e8ea;
   width: 56px;
   margin: 24px auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .statistics-item-divider {
+    width: 72px;
+    margin: 16px auto;
+  }
 }
 
 .statistics-item-desc {
@@ -1183,6 +1189,8 @@ a {
   .blog-item-title {
     padding: 0;
     padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

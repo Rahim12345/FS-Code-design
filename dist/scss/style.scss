@@ -17,7 +17,7 @@ a {
 
 .header {
   background-image: url("../img/header-bg.png");
-  background-size: cover;
+  //background-size: cover;
   height: 100vh;
   &-title {
     font-size: 96px;
@@ -283,6 +283,7 @@ a {
     @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
       padding-top: 48px;
       display: block;
+      padding-bottom: 72px;
     }
   }
 
@@ -390,7 +391,6 @@ a {
     @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
       padding-left: 0px;
       padding-right: 16px;
-      min-width: 176px;
     }
 
     &-content {
@@ -504,6 +504,10 @@ a {
       background-color: #e6e8ea;
       width: 56px;
       margin: 24px auto;
+      @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
+        width: 72px;
+        margin: 16px auto;
+      }
     }
 
     &-desc {
@@ -693,6 +697,8 @@ a {
       @media screen and (min-width: $smallWidth) and (max-width: $largeWidth) {
         padding: 0;
         padding-bottom: 16px;
+        font-size: 20px;
+        line-height: 24px;
       }
 
       &:hover,
